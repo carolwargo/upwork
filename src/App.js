@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import HomePage from "./pages/HomePage.jsx";
+import AboutPage from "./pages/AboutPage.jsx";
+import ResumePage  from "./pages/ResumePage.jsx";
+import PageSamples from "./pages/PageSamples.jsx";
+import Footer from "./components/Footer.jsx";
+
+import "./App.css";
+import ErrorBoundary from "./components/ErrorBoundary.jsx";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter basename="/react-portfolio">
+        <ErrorBoundary>
+        <Routes>
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/about" element={<AboutPage/>} />
+          <Route path="/resume" element={<ResumePage />} />
+          <Route path="/page-samples" element={<PageSamples />} />  
+          {/* Add a catch-all route for handling errors */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+        </ErrorBoundary>
+      </BrowserRouter>
     </div>
   );
 }
+
+// Create a component for handling not found routes
+function NotFound() {
+  console.error("Page not found!"); // Log error to console
+  return <h1>404 - Not Found</h1>;
+}
+
+
+
 
 export default App;
