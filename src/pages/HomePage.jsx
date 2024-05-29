@@ -133,6 +133,7 @@ className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#F
             </p>
           </div>
         </footer>
+        
     </div>
     </motion.div>
   );
