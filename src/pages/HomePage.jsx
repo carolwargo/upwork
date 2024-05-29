@@ -84,6 +84,21 @@ export default function AboutPage() {
  <br />
 </div>
 <br />
+
+<div className="w3-content w3-container ">
+          <div className="row d-flex justify-content-center align-items-center  w3-margin-top">
+            <div className="col-lg-6 ">
+              <h1 className=" fw-light"><b>ABOUT ME.</b></h1>
+              <h5 className=" fw-light">"I'm Carol Wargo, and welcome to my corner of the internet!"</h5>
+              <br />
+              <p className=" fw-light"><em>"My passion lies in utilizing creative design to drive innovative solutions through technology. With a distinctive blend of skills and experience, I am a seasoned full-stack software developer and UX designer deeply committed to collaboration, bringing together diverse perspectives to tackle challenges effectively. With over 20 years of experience in business management & strategic development, I bring a wealth of knowledge and expertise to every project I undertake."</em></p>
+            </div>
+            <div className="col-lg-6 ">
+              <img src={MeWhite} className="w3-round w3-image mx-auto d-block" alt="Me" width="500" height="333" />
+            </div>
+          </div>
+        </div>
+
 </div>
 {/**End technical proficiencies */}
 
@@ -133,7 +148,7 @@ className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#F
             </p>
           </div>
         </footer>
-        
+
     </div>
     </motion.div>
   );
