@@ -40,7 +40,7 @@
     "react-icons": "^4.10.1",
     "react-photoswipe-gallery": "^3.0.1",
     "react-router-dom": "^6.15.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^3.0.1",
     "react-share": "^5.1.0",
     "react-ui-scrollspy": "^2.3.0",
     "smooth-scroll": "^16.1.3",
