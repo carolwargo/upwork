@@ -5,10 +5,8 @@ import {
   MDBContainer,
   MDBCol,
   MDBRow,
-  MDBIcon
 } from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
-import ResumeDownload from '../assets/ResumeDownload.pdf';
 
 export default function App() {
   const scrollToTop = () => {
@@ -38,21 +36,19 @@ export default function App() {
          
               <b>Carol</b> Wargo
             </h6>
-            <p className='fw-light' style={{fontSize:'14px'}}>
-            Thank you for visiting my site. I hope you found what you were looking for and enjoyed your time here. Feel free to reach out if you have any questions or feedback!
-            </p>
-            <button className="w3-button w3-round-xxlarge " 
-                style={{backgroundColor:'#FF385C', fontSize:'14px'}}
-            >
-                <a
-                
-                  className="p-2 text-white button"
-                  style={{backgroundColor:'#FF385C', fontSize:'14px'}}
-                  id="download"
-                  download 
-                  href={ResumeDownload}
+            
+            <p style={{fontSize:'14px'}}>
+           Hire me on Upwork!
+              Click the 'Profile' button below to navigate to my UpWork 
+              profile page to get started. 
+              </p>
+              <button className=" w3-button w3-text-light-grey w3-padding w3-round-xxlarge" 
+              style={{backgroundColor:'#6fda44', fontSize:'14px'}}>
+              <a href="https://www.upwork.com/freelancers/~01908061bb7029fac2"
+                  className="text-white button"
+                  onClick={scrollToTop}
                 >
-                 Download Resume
+                <b>UpWork Profile</b>
                 </a>
               </button>
           </MDBCol>
@@ -80,14 +76,6 @@ export default function App() {
                 Digital Resume
                 </p>
               </Link>
-          
-            
-              <Link to='/portfolio' className='text-reset fw-light' onClick={scrollToTop} >
-              <p style={{fontSize:'14px'}}>
-               Portfolio
-               </p>
-              </Link>
-           
           </MDBCol>
 
           <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4 justify-content-center w3-padding-large'>
@@ -106,75 +94,21 @@ export default function App() {
               <a href='http://carolwargo.github.io/realestate' className='text-reset' onClick={scrollToTop} >
                 Real Estate
               </a>
-            </p>
-            <p style={{fontSize:'14px'}}>
-              <Link to='sidenav' className='text-reset' onClick={scrollToTop} >
-               Price Menu
-              </Link>
-            </p>
+            </p> 
             
           </MDBCol>
 
 
-          <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4 mb-md-0 flex-column justify-content-center w3-padding-large'>
-           <h6 className='fw-bold'>CONTACT</h6>
-           
-            <p style={{fontSize:'14px'}}>
-              <MDBIcon icon="home" className="me-2" />
-              Huntingtown, MD
-            </p>
-            <p style={{fontSize:'14px'}} >
-           
-              <a href='mailto:carolwargo.dev@gmail.com' 
-              className='text-reset'>
-                     <MDBIcon icon="envelope" className="me-2" />
-              Email
-              </a>
-            </p>
-            <p style={{fontSize:'14px'}} >
-            <a href='tel:+4437711726'className='text-reset'>
-            <MDBIcon icon="phone-alt" className="me-2" />
-              Call
-</a>
-            </p>
-            <button className="mt-2 w3-button w3-text-light-grey w3-padding w3-round-xxlarge" 
-              style={{backgroundColor:'#FF385C', fontSize:'14px'}}>
-              <Link to="/contact#contact"
-                  className="text-white button"
-                  onClick={scrollToTop}
-                >
-                Contact
-                </Link>
-              </button>
-          </MDBCol>
         </MDBRow>
       </MDBContainer>
     </section>
     <hr />
     <section className='text-center d-flex justify-content-center w3-padding-large border-bottom'>
-      <div className='me-auto d-none d-lg-block' >
+
       <p style={{fontSize:'12px', fontWeight:'light'}}> © 2023 Copyright:    <a className='text-white' href='https:carolwargo.github.io/react-portfolio' style={{fontSize:'12px'}}> <b> C</b>WARGO
         </a></p>
-      </div>
+   
 
-      <div className='mx-auto justify-content-center w3-margin-left'>
-      
-          
-      <a href='tel:+4437711726' className='me-4 text-reset'>
-      <MDBIcon icon="phone-alt" />
-
-        </a>
-        <a href='mailto:carolwargo.dev@gmail.com' className='me-4 text-reset'>
-        <MDBIcon icon="envelope" />
-        </a>
-    
-        <a href='https://www.linkedin.com/in/carol-wargo-35021baa/' className='me-4 text-reset'>
-          <MDBIcon fab icon="linkedin" />
-        </a>
-        <a href='https://github.com/carolwargo' className='me-4 text-reset'>
-          <MDBIcon fab icon="github" />
-        </a>
-      </div>
     </section>
     </MDBFooter> 
   </div>

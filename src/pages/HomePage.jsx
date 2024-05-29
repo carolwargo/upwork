@@ -8,7 +8,6 @@ import { GiGears } from "react-icons/gi";
 //import { SiAdobe } from "react-icons/si";
 
 import MeWhite from '../assets/images/MeWhite.png';
-import LocationView from '../assets/images/LocationView.png';
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../App.css';
@@ -25,13 +24,10 @@ export default function AboutPage() {
     <motion.div
     initial={{ y: -20, opacity: 0}}
     animate={{y: 0, opacity: 1}}
-    exit={{y: 20, opacity: 0}}
-    className="home"
-    
+    exit={{y: 20, opacity: 0}} 
     >
-    <div className="about" id="about">
-     
-    <div className="w3-content w3-container w3-padding-64 w3-margin-top">
+    <div className="home" id="home"> 
+    <div className="w3-content w3-container w3-padding-64 ">
         <div className="w3-content w3-container ">
           <div className="row d-flex justify-content-center align-items-center  w3-margin-top">
             <div className="col-lg-6 ">
@@ -41,7 +37,7 @@ export default function AboutPage() {
               <p className=" fw-light"><em>"My passion lies in utilizing creative design to drive innovative solutions through technology. With a distinctive blend of skills and experience, I am a seasoned full-stack software developer and UX designer deeply committed to collaboration, bringing together diverse perspectives to tackle challenges effectively. With over 20 years of experience in business management & strategic development, I bring a wealth of knowledge and expertise to every project I undertake."</em></p>
             </div>
             <div className="col-lg-6 ">
-              <img src={MeWhite} className="w3-round w3-image w3-opacity w3-hover-opacity-off mx-auto d-block" alt="Me" width="500" height="333" />
+              <img src={MeWhite} className="w3-round w3-image mx-auto d-block" alt="Me" width="500" height="333" />
             </div>
           </div>
         </div>
@@ -50,10 +46,9 @@ export default function AboutPage() {
 <br />
         {/* Technical Proficiencies */}
         <div className="row">
-          
-        <div className="w3-content w3-container ">
-          <p>TECHNOLOGICAL PROFICIENCIES</p>
-          <h2 className=""><strong>WHAT I DO BEST.</strong></h2>
+        <div className="w3-content w3-container">
+          <p className="mb-0">TECHNOLOGICAL PROFICIENCIES</p>
+          <h2><strong>WHAT I DO BEST.</strong></h2>
           <br />
           <p className="w3-wide text-black" style={{fontSize:'1rem'}}><GiGears className="justify-content-center"/> Core Technologies</p>
               <div className="w3-light-grey shadow">
@@ -116,20 +111,7 @@ className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#F
   </div>
       
 
-        {/* Location */}
-        <div className="w3-content w3-container w3-padding-64 w3-margin-top">
-          <div className="row justify-content-center align-items-center">
-            <div className="col-lg-4">
-              <h1  className='text-center'>WHERE I'M LOCATED</h1>
-              <h5 className='text-center'><em>Huntingtown, Maryland!</em></h5>
-            </div>
-            <div className='col-lg-8 '>
-              <img src={LocationView} alt="htown" className="w3-image w3-round shadow" style={{width:"100%"}} />
-            </div>
-            </div>
-          </div>
-          <div>
-              </div>
+      
               <div className="w3-container w3-content text-center w3-padding-48 w3-margin-bottom w3-padding-large">
               <h2 className="text-black">View my digital resume to learn more about my professional experience and qualifications.        
         </h2><br />
@@ -147,7 +129,7 @@ className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#F
           <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">
-              <Link to="#about" style={{color:'#FF385C'}}>Back to top</Link>
+              <Link to="/" style={{color:'#FF385C'}}>Back to top</Link>
             </p>
           </div>
         </footer>

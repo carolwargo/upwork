@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import HomePage from "./pages/HomePage.jsx";
-import AboutPage from "./pages/AboutPage.jsx";
 import ResumePage  from "./pages/ResumePage.jsx";
 import PageSamples from "./pages/PageSamples.jsx";
 import Footer from "./components/Footer.jsx";
@@ -13,11 +12,10 @@ import ErrorBoundary from "./components/ErrorBoundary.jsx";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/react-portfolio">
+      <BrowserRouter basename="/upwork">
         <ErrorBoundary>
         <Routes>
           <Route path="/" element={<HomePage/>} />
-          <Route path="/about" element={<AboutPage/>} />
           <Route path="/resume" element={<ResumePage />} />
           <Route path="/page-samples" element={<PageSamples />} />  
           {/* Add a catch-all route for handling errors */}

@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+/* Global CSS */
+* {
+  font-family: 'Proxima Nova', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Importing external stylesheets */
+@import url("https://use.typekit.net/tce5mmy.css");
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* Meriecomponent-specific styles */
+.about {
+  @media (max-width: 576px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+}
+/* CSS variables for grid breakpoints */
+:root {
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+/* Media query for responsive navigation header */
+@media (max-width: 768px) {
+  .nav-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
