@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/upwork/static/css/main.6a42d666.css",
+    "main.js": "/upwork/static/js/main.ebedcff6.js",
+    "static/js/453.447d5c7e.chunk.js": "/upwork/static/js/453.447d5c7e.chunk.js",
+    "static/media/RealEstate.png": "/upwork/static/media/RealEstate.ba0b8a8bd8b9df38e276.png",
+    "static/media/Album.png": "/upwork/static/media/Album.624f5f271608ee54bae6.png",
+    "static/media/BlogShot.png": "/upwork/static/media/BlogShot.266187bd8e0092efbf48.png",
+    "static/media/Center.png": "/upwork/static/media/Center.472c18e0a951f1d12c7f.png",
+    "static/media/YogaBlog.png": "/upwork/static/media/YogaBlog.d4f9f4977770385e69fb.png",
+    "static/media/CardsMain2.png": "/upwork/static/media/CardsMain2.f0cc1b980fd70f588f47.png",
+    "static/media/Left.png": "/upwork/static/media/Left.35541435b45c220fff4c.png",
+    "static/media/Right.png": "/upwork/static/media/Right.eabd94d072f1d85b2790.png",
+    "static/media/ResumeDownload.pdf": "/upwork/static/media/ResumeDownload.cd0eab5bd2e1e70a9dfb.pdf",
+    "static/media/GirlCamera.png": "/upwork/static/media/GirlCamera.8f48a81fde5a24c9c60b.png",
+    "static/media/fa-solid-900.ttf": "/upwork/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
+    "static/media/MeWhite.png": "/upwork/static/media/MeWhite.4524c5451cc14595b196.png",
+    "static/media/fa-brands-400.ttf": "/upwork/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
+    "static/media/fa-solid-900.woff2": "/upwork/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
+    "static/media/fa-brands-400.woff2": "/upwork/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
+    "static/media/fa-regular-400.ttf": "/upwork/static/media/fa-regular-400.eb91f7b948a42799f678.ttf",
+    "static/media/fa-regular-400.woff2": "/upwork/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
+    "static/media/fa-v4compatibility.ttf": "/upwork/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
+    "static/media/fa-v4compatibility.woff2": "/upwork/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
+    "index.html": "/upwork/index.html",
+    "main.6a42d666.css.map": "/upwork/static/css/main.6a42d666.css.map",
+    "main.ebedcff6.js.map": "/upwork/static/js/main.ebedcff6.js.map",
+    "453.447d5c7e.chunk.js.map": "/upwork/static/js/453.447d5c7e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a42d666.css",
+    "static/js/main.ebedcff6.js"
+  ]
+}
