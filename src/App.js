@@ -6,6 +6,7 @@ import ResumePage  from "./pages/ResumePage.jsx";
 import PageSamples from "./pages/PageSamples.jsx";
 import CardsPage from './pages/CardsPage.jsx'
 import Footer from "./components/Footer.jsx";
+import NavFixed from "./components/NavFixed.jsx";
 
 import "./App.css";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <BrowserRouter basename="/upwork">
         <ErrorBoundary>
+        <NavFixed />
         <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/resume" element={<ResumePage />} />

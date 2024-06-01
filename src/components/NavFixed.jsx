@@ -104,8 +104,9 @@ function BasicExample() {
                 Resume
               </Nav.Link>
 
-             
+           
               <NavDropdown title="My Work" id="basic-nav-dropdown"  style={{ fontSize: "14px" }}>
+              {/**  
               <Nav.Link
               className="dropdown-item w3-padding"
                 as={Link}
@@ -115,7 +116,7 @@ function BasicExample() {
               >
                Web Components
               </Nav.Link>
-
+*/} 
               <Nav.Link
                  className="dropdown-item w3-padding"
                 as={Link}
@@ -145,7 +146,7 @@ function BasicExample() {
               >
                Cards & Images
               </Nav.Link>
-
+{/** 
               <Nav.Link
                  className="dropdown-item w3-padding"
                 as={Link}
@@ -165,7 +166,7 @@ function BasicExample() {
               >
                Graphics
               </Nav.Link>
-            
+            */}
             
             </NavDropdown>
             </Nav>
