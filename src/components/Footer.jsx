@@ -39,8 +39,8 @@ export default function App() {
             
             <p style={{fontSize:'14px'}}>
            Hire me on Upwork!
-              Click the 'Profile' button below to navigate to my UpWork 
-              profile page to get started. 
+              Click the 'UpWork Profile' below to navigate to my UpWork 
+              profile page and get started. 
               </p>
               <button className=" w3-button w3-text-light-grey w3-padding w3-round-xxlarge" 
               style={{backgroundColor:'#6fda44', fontSize:'14px'}}>

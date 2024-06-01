@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage.jsx";
 import ResumePage  from "./pages/ResumePage.jsx";
 import PageSamples from "./pages/PageSamples.jsx";
+import CardsPage from './pages/CardsPage.jsx'
 import Footer from "./components/Footer.jsx";
 
 import "./App.css";
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<HomePage/>} />
           <Route path="/resume" element={<ResumePage />} />
           <Route path="/page-samples" element={<PageSamples />} />  
+          <Route path="/cards" element={<CardsPage />} />  
           {/* Add a catch-all route for handling errors */}
           <Route path="*" element={<NotFound />} />
         </Routes>

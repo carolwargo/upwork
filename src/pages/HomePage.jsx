@@ -29,6 +29,7 @@ export default function AboutPage() {
     <div className="home" id="home"> 
     <div className="w3-content w3-container w3-padding-64 ">
         <div className="w3-content w3-container ">
+          {/**Start Me Row*/}
           <div className="row d-flex justify-content-center align-items-center  w3-margin-top">
             <div className="col-lg-6 ">
               <h1 className=" fw-light"><b>ABOUT ME.</b></h1>
@@ -40,11 +41,12 @@ export default function AboutPage() {
               <img src={MeWhite} className="w3-round w3-image mx-auto d-block" alt="Me" width="500" height="333" />
             </div>
           </div>
+            {/**Start Me Row*/}
         </div>
 <br />
 <hr />
 <br />
-        {/* Technical Proficiencies */}
+        {/* Start Technical Proficiencies Row*/}
         <div className="row">
         <div className="w3-content w3-container">
           <p className="mb-0">TECHNOLOGICAL PROFICIENCIES</p>
@@ -83,8 +85,12 @@ export default function AboutPage() {
   <br />
  <br />
 </div>
-<br />
+{/* End Technical Proficiencies Row*/}
+</div>
 
+
+
+ {/* Start Extra About Me placeholder*/}
 <div className="w3-content w3-container ">
           <div className="row d-flex justify-content-center align-items-center  w3-margin-top">
             <div className="col-lg-6 ">
@@ -98,15 +104,10 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+{/**End Extra About Me placeholder*/}
 
-</div>
-{/**End technical proficiencies */}
-
-
-{/**start experience count */}
-
-<div 
-className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#FF385C'}}>
+{/**Start experience count */}
+<div className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#FF385C'}}>
   <div className="w3-quarter w3-section">
     <span className="w3-xlarge">20<span style={{fontSize:'10px'}}>yrs</span> +</span><br />
     BUSINESS EXPERIENCE
@@ -124,9 +125,9 @@ className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#F
     MEETINGS
   </div>
   </div>
-      
+     {/**End experience count */} 
 
-      
+      {/**Start Final Container*/}
               <div className="w3-container w3-content text-center w3-padding-48 w3-margin-bottom w3-padding-large">
               <h2 className="text-black">View my digital resume to learn more about my professional experience and qualifications.        
         </h2><br />
@@ -140,7 +141,8 @@ className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#F
               
                 </Link>
               </div> 
-             
+               {/*End Final Container*/}
+                 {/**Start Footer Container*/}
           <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">
@@ -148,7 +150,7 @@ className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#F
             </p>
           </div>
         </footer>
-
+  {/**End Footer Container*/}
     </div>
     </motion.div>
   );
