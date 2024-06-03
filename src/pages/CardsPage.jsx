@@ -260,6 +260,15 @@ const Cards = () => {
                  View Landing Pages
               </button>
               </Link>
+                <button className=" w3-button w3-text-black w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
+              style={{backgroundColor:'#6fda44'}}>
+              <a href="https://www.upwork.com/freelancers/~01908061bb7029fac2"
+                  className="text-black button"
+                  onClick={scrollToTop}
+                >
+                View UpWork Profile
+                </a>
+              </button>
             </div>
           </div>
         </div>

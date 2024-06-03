@@ -90,7 +90,7 @@ export default function AboutPage() {
 
 
 
- {/* Start Extra About Me placeholder*/}
+ {/* Start Extra About Me placeholder
 <div className="w3-content w3-container ">
           <div className="row d-flex justify-content-center align-items-center  w3-margin-top">
             <div className="col-lg-6 ">
@@ -104,7 +104,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-{/**End Extra About Me placeholder*/}
+End Extra About Me placeholder*/}
 
 {/**Start experience count */}
 <div className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#FF385C'}}>
@@ -133,13 +133,22 @@ export default function AboutPage() {
         </h2><br />
            
               <Link to="/resume#resume"
-                  className="button text-white"
+                                  className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom"
                   onClick={scrollToTop}
                 >
                      <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
               style={{backgroundColor:'#FF385C'}}> VIEW MY RESUME</button>
               
                 </Link>
+                <button className=" w3-button w3-text-black w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
+              style={{backgroundColor:'#6fda44'}}>
+              <a href="https://www.upwork.com/freelancers/~01908061bb7029fac2"
+                  className="text-black button"
+                  onClick={scrollToTop}
+                >
+                View UpWork Profile
+                </a>
+              </button>
               </div> 
                {/*End Final Container*/}
                  {/**Start Footer Container*/}

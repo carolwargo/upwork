@@ -31,7 +31,7 @@ function PageSamples() {
             }}
           >
           
-            <h1 className="text-center text-black"><b>Sample Website Layouts</b></h1>
+            <h1 className="text-center text-black"><b>Sample Landing Pages</b></h1>
             <hr className="w3-opacity" />
           <h3 className="text-center text-black">Discover some of the many possibilities when crafting online 
             experiences. From sleek and functional designs to blog sites,  
@@ -277,7 +277,15 @@ function PageSamples() {
                  View Utility Apps
                 </Link>
               </button>
-        
+              <button className=" w3-button w3-text-black w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
+              style={{backgroundColor:'#6fda44'}}>
+              <a href="https://www.upwork.com/freelancers/~01908061bb7029fac2"
+                  className="text-black button"
+                  onClick={scrollToTop}
+                >
+                View UpWork Profile
+                </a>
+              </button>
           </div>
         </div>
         </div>
